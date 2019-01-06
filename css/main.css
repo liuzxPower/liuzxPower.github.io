@@ -2002,7 +2002,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #3effbd;
+  background: #c7a1b5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2125,11 +2125,6 @@ pre .javascript .function {
 .footer {
   font-size: 14px;
   color: #999;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  min-height: 50px;
 }
 .footer img {
   border: none;

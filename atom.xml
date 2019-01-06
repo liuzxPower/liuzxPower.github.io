@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="liuzxPower.github.io/"/>
-  <updated>2019-01-03T08:43:34.209Z</updated>
+  <updated>2019-01-06T09:41:03.096Z</updated>
   <id>liuzxPower.github.io/</id>
   
   <author>
@@ -17,11 +17,25 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>My New Post</title>
-    <link href="liuzxPower.github.io/2019/01/03/My-New-Post/"/>
-    <id>liuzxPower.github.io/2019/01/03/My-New-Post/</id>
+    <title>haha</title>
+    <link href="liuzxPower.github.io/2019/01/06/haha/"/>
+    <id>liuzxPower.github.io/2019/01/06/haha/</id>
+    <published>2019-01-06T09:40:29.000Z</published>
+    <updated>2019-01-06T09:41:03.096Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>你好HEXO</title>
+    <link href="liuzxPower.github.io/2019/01/03/%E4%BD%A0%E5%A5%BDHEXO/"/>
+    <id>liuzxPower.github.io/2019/01/03/你好HEXO/</id>
     <published>2019-01-03T08:43:34.000Z</published>
-    <updated>2019-01-03T08:43:34.209Z</updated>
+    <updated>2019-01-06T09:32:43.665Z</updated>
     
     <summary type="html">
     
