@@ -1098,6 +1098,9 @@ pre .javascript .function {
 .tag-cloud {
   text-align: center;
 }
+.tag-cloud .tag-cloud-title {
+  font-size: 18px;
+}
 .tag-cloud a {
   display: inline-block;
   margin: 10px;
@@ -2002,7 +2005,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7811b1;
+  background: #74584b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2414,6 +2417,7 @@ pre .javascript .function {
 }
 .category-all-page .category-all-title {
   text-align: center;
+  font-size: 18px;
 }
 .category-all-page .category-all {
   margin-top: 20px;
@@ -2425,9 +2429,11 @@ pre .javascript .function {
 }
 .category-all-page .category-list-item {
   margin: 5px 10px;
+  font-size: 18px;
 }
 .category-all-page .category-list-count {
   color: #bbb;
+  font-size: 18px;
 }
 .category-all-page .category-list-count:before {
   display: inline;
@@ -2846,7 +2852,7 @@ hr {
   display: none;
 }
 .posts-expand .post {
-  margin-top: 120px;
+  margin-top: 100px;
 }
 .posts-expand .post:first-child {
   margin-top: 0;
@@ -2985,7 +2991,7 @@ hr {
   }
 }
 .post {
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   padding: 25px;
   -webkit-box-shadow: 0 0 14px #cacbcb;
   -moz-box-shadow: 0 0 14px #cacbcc;
