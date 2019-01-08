@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="liuzxPower.github.io/"/>
-  <updated>2019-01-07T05:13:39.486Z</updated>
+  <updated>2019-01-08T08:06:02.399Z</updated>
   <id>liuzxPower.github.io/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>tupian</title>
+    <link href="liuzxPower.github.io/2019/01/08/tupian/"/>
+    <id>liuzxPower.github.io/2019/01/08/tupian/</id>
+    <published>2019-01-08T07:25:15.000Z</published>
+    <updated>2019-01-08T08:06:02.399Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/08/tupian/ceshi.jpg" alt="你想输入的替代文字"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/08/tupian/ceshi.jpg&quot; alt=&quot;你想输入的替代文字&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>测试</title>
+    <link href="liuzxPower.github.io/2019/01/08/%E6%B5%8B%E8%AF%95/"/>
+    <id>liuzxPower.github.io/2019/01/08/测试/</id>
+    <published>2019-01-08T06:59:15.000Z</published>
+    <updated>2019-01-08T07:24:37.926Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/08/测试/ceshi.jpg" alt="你想输入的替代文字"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/08/测试/ceshi.jpg&quot; alt=&quot;你想输入的替代文字&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>haha</title>
@@ -53,23 +97,26 @@
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="liuzxPower.github.io/2019/01/03/hello-world/"/>
-    <id>liuzxPower.github.io/2019/01/03/hello-world/</id>
-    <published>2019-01-03T08:38:31.851Z</published>
-    <updated>2019-01-03T08:38:31.851Z</updated>
+    <title>GitHub从注册到使用方法</title>
+    <link href="liuzxPower.github.io/2019/01/01/hello-world/"/>
+    <id>liuzxPower.github.io/2019/01/01/hello-world/</id>
+    <published>2019-01-01T09:40:29.000Z</published>
+    <updated>2019-01-08T07:11:59.065Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote><p>gitHub是一个面向开源及私有软件项目的托管平台，于2008年4月10日正式上线，除了git代 码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等。在2018年6月4日，被微软收购后传来的第一个好消息是GitHub 可以免费无限制的为普通用户提供私有仓库服务了，所以还没有注册的小伙伴抓紧跟着这篇文章注册自己的GitHub吧！</p></blockquote><a id="more"></a><h3 id="注册github步骤"><a href="#注册github步骤" class="headerlink" title="注册github步骤"></a>注册github步骤</h3><p>1.打开github官网，进入注册界面 点我注册<br>2.我们会看到这个页面<br><img src="/01/hello-world/../_posts/hello-world/hello.jpg" alt="你想输入的替代文字"></p><p><strong>Step1</strong>: 这里需要填写昵称（用户名）、注册邮箱和密码</p><p><strong>昵称一栏</strong>:每次在你输入昵称之后，都会检查是否已经被注册。如果被注册了，那么会提示Username is already taken。此时请换另一个昵称进行注册。昵称中只能出现字母、数字、短横线（-），并且短横线不能作为开头头。中文也是不合法昵称。</p><p><strong>邮箱一栏</strong>：要填写合法邮箱，并且是未在GitHub注册过的邮箱。否则会弹出错误提示。</p><p><strong>密码一栏</strong>：注意密码至少有7个字符，其中至少有一个小写字母，至少有一个是数字。</p><p><strong>在三个输入框中的信息都合法之后，它们右边会出现绿色小箭头。此时点击最下方的绿色大按钮来开始注册</strong><br><strong>1.然后有一个图片验证只需要旋转图片使之转到正确的方位就可以了，然后就进入了默认免费模板，什么都不用改，直接点Continue进入step3页面</strong><br><strong>2.step3页面是用户调查页面也可不填然后点击Submit提交会跳到邮箱验证页面</strong><br><strong>3.这里需要进行邮箱验证，此时你刚刚注册用的邮箱会接到一条github官网发送的邮件，打开邮件点击链接即可验证并自动跳回注册完成页面，点击start a project创建仓库。</strong></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;gitHub是一个面向开源及私有软件项目的托管平台，于2008年4月10日正式上线，除了git代 码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑器、协作图谱（报表）、代码片段分享（Gist）等功能。目前，其注册用户已经超过350万，托管版本数量也是非常之多，其中不乏知名开源项目 Ruby on Rails、jQuery、python 等。在2018年6月4日，被微软收购后传来的第一个好消息是GitHub 可以免费无限制的为普通用户提供私有仓库服务了，所以还没有注册的小伙伴抓紧跟着这篇文章注册自己的GitHub吧！&lt;/p&gt;
+&lt;/blockquote&gt;
     
     </summary>
     
+      <category term="github" scheme="liuzxPower.github.io/categories/github/"/>
+    
+    
+      <category term="github" scheme="liuzxPower.github.io/tags/github/"/>
     
   </entry>
   
