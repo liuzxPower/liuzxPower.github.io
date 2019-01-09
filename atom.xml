@@ -96,11 +96,11 @@
       <category term="电影评论" scheme="liuzxPower.github.io/categories/%E7%94%B5%E5%BD%B1%E8%AF%84%E8%AE%BA/"/>
     
     
-      <category term="github" scheme="liuzxPower.github.io/tags/github/"/>
-    
       <category term="npm" scheme="liuzxPower.github.io/tags/npm/"/>
     
       <category term="hexo" scheme="liuzxPower.github.io/tags/hexo/"/>
+    
+      <category term="github" scheme="liuzxPower.github.io/tags/github/"/>
     
   </entry>
   
