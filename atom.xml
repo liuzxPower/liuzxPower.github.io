@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="liuzxPower.github.io/"/>
-  <updated>2019-01-12T04:47:18.066Z</updated>
+  <updated>2019-01-22T07:27:20.939Z</updated>
   <id>liuzxPower.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JS实现HTML标签转义及反转义</title>
+    <link href="liuzxPower.github.io/2019/01/22/JS%E5%AE%9E%E7%8E%B0HTML%E6%A0%87%E7%AD%BE%E8%BD%AC%E4%B9%89%E5%8F%8A%E5%8F%8D%E8%BD%AC%E4%B9%89/"/>
+    <id>liuzxPower.github.io/2019/01/22/JS实现HTML标签转义及反转义/</id>
+    <published>2019-01-22T06:50:54.000Z</published>
+    <updated>2019-01-22T07:27:20.939Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote><p>今天协助后端处理富文本javascript注入xss攻击问题，需要将富文本中的带html标签内容进行转义后传参给后端，下面说一下怎么通过js实现html标签转义反转义。</p></blockquote> <a id="more"></a><h3 id="JS实现HTML标签转义及反转义"><a href="#JS实现HTML标签转义及反转义" class="headerlink" title="JS实现HTML标签转义及反转义"></a>JS实现HTML标签转义及反转义</h3><p>html标签转义</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function html2Escape(html) &#123;</span><br><span class="line"> return sHtml.replace(/[&lt;&gt;&amp;&quot;]/g,function(c)&#123;return &#123;&apos;&lt;&apos;:&apos;&amp;lt;&apos;,&apos;&gt;&apos;:&apos;&amp;gt;&apos;,&apos;&amp;&apos;:&apos;&amp;amp;&apos;,&apos;&quot;&apos;:&apos;&amp;quot;&apos;&#125;[c];&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>html标签反转义</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function escape2Html(str) &#123;</span><br><span class="line"> var arrEntities=&#123;&apos;lt&apos;:&apos;&lt;&apos;,&apos;gt&apos;:&apos;&gt;&apos;,&apos;nbsp&apos;:&apos; &apos;,&apos;amp&apos;:&apos;&amp;&apos;,&apos;quot&apos;:&apos;&quot;&apos;&#125;;</span><br><span class="line"> return str.replace(/&amp;(lt|gt|nbsp|amp|quot);/ig,function(all,t)&#123;return arrEntities[t];&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>去掉html标签</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function removeHtmlTab(tab) &#123;</span><br><span class="line"> return tab.replace(/&lt;[^&lt;&gt;]+?&gt;/g,&apos;&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>&nbsp;转成空格</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function nbsp2Space(str) &#123;</span><br><span class="line"> var arrEntities = &#123;&apos;nbsp&apos; : &apos; &apos;&#125;;</span><br><span class="line"> return str.replace(/&amp;(nbsp);/ig, function(all, t)&#123;return arrEntities[t]&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>回车转为br标签</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function return2Br(str) &#123;</span><br><span class="line"> return str.replace(/\r?\n/g,&quot;&lt;br /&gt;&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>去除开头结尾换行,并将连续3次以上换行转换成2次换行</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function trimBr(str) &#123;</span><br><span class="line"> str=str.replace(/((\s|&amp;nbsp;)*\r?\n)&#123;3,&#125;/g,&quot;\r\n\r\n&quot;);//限制最多2次换行</span><br><span class="line"> str=str.replace(/^((\s|&amp;nbsp;)*\r?\n)+/g,&apos;&apos;);//清除开头换行</span><br><span class="line"> str=str.replace(/((\s|&amp;nbsp;)*\r?\n)+$/g,&apos;&apos;);//清除结尾换行</span><br><span class="line"> return str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>将多个连续空格合并成一个空格</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function mergeSpace(str) &#123;</span><br><span class="line"> str=str.replace(/(\s|&amp;nbsp;)+/g,&apos; &apos;);</span><br><span class="line"> return str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;今天协助后端处理富文本javascript注入xss攻击问题，需要将富文本中的带html标签内容进行转义后传参给后端，下面说一下怎么通过js实现html标签转义反转义。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="js" scheme="liuzxPower.github.io/categories/js/"/>
+    
+    
+      <category term="html" scheme="liuzxPower.github.io/tags/html/"/>
+    
+      <category term="js" scheme="liuzxPower.github.io/tags/js/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用vue-cli脚手架创建vue+webpack项目</title>
     <link href="liuzxPower.github.io/2019/01/12/%E4%BD%BF%E7%94%A8vue-cli%E8%84%9A%E6%89%8B%E6%9E%B6%E5%88%9B%E5%BB%BAvue-webpack%E9%A1%B9%E7%9B%AE/"/>
     <id>liuzxPower.github.io/2019/01/12/使用vue-cli脚手架创建vue-webpack项目/</id>
     <published>2019-01-12T04:25:24.000Z</published>
-    <updated>2019-01-12T04:47:18.066Z</updated>
+    <updated>2019-01-12T07:11:35.877Z</updated>
     
     <content type="html"><![CDATA[<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote><p>本文会讲一下如何使用vue-cli脚手架创建vue+webpack项目，来一起看下吧！</p></blockquote> <a id="more"></a><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><blockquote><p>Vue-cli是快速构建这个单页应用的脚手架。<br>使用npm全局安装vue-cli（前提是你已经安装了nodejs，否则你连npm都用不了），在cmd中输入一下命令：</p></blockquote><h4 id="1-npm-install-–global-vue-cli-安装完成后，可以使用-vue-V-（注意-V-大写）查看是否安装成功"><a href="#1-npm-install-–global-vue-cli-安装完成后，可以使用-vue-V-（注意-V-大写）查看是否安装成功" class="headerlink" title="1. npm install –global vue-cli 安装完成后，可以使用 vue -V （注意 V 大写）查看是否安装成功"></a>1. npm install –global vue-cli 安装完成后，可以使用 vue -V （注意 V 大写）查看是否安装成功</h4><h4 id="2-vue-init-webpack-Vue-Project-生成项目"><a href="#2-vue-init-webpack-Vue-Project-生成项目" class="headerlink" title="2. vue init webpack Vue-Project 生成项目"></a>2. vue init webpack Vue-Project 生成项目</h4><h4 id="3-npm-install"><a href="#3-npm-install" class="headerlink" title="3. npm install"></a>3. npm install</h4><h4 id="4-npm-run-dev"><a href="#4-npm-run-dev" class="headerlink" title="4. npm run dev"></a>4. npm run dev</h4><p>执行完以上步骤，浏览器会打开，如果没有加载出页面，有可能是本地的 8080 端口被占用，需要修改一下配置文件 config&gt;index.js如下图<img src="/images/hexo/11.jpg" alt="vue"></p><p>建议将端口号改为不常用的端口。另外我还将 build 的路径前缀修改为 ’ ./ ‘（原本为 ’ / ‘），是因为打包之后，外部引入 js 和 css 文件时，如果路径以 ’ / ’ 开头，在本地是无法找到对应文件的（服务器上没问题）。所以如果需要在本地打开打包后的文件，就得修改文件路径。</p><p>如果npm run dev后不能自动打开浏览器时找到config文件夹下的index.js更改 autoOpenBrowser: true, //是否默认打开浏览器,默认是false，改为true即可，如下图：</p><p><img src="/images/hexo/12.jpg" alt="vue"></p>]]></content>
     

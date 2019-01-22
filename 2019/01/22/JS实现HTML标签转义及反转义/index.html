@@ -118,17 +118,18 @@
 
 
 
-  <meta name="description" content="山重水复疑无路，柳暗花明又一村">
-<meta name="keywords" content="前端学习，H5，CSS3，JS">
-<meta property="og:type" content="website">
-<meta property="og:title" content="WE ARE YOUNG">
-<meta property="og:url" content="liuzxPower.github.io/tags/github/index.html">
+  <meta name="description" content="前言 今天协助后端处理富文本javascript注入xss攻击问题，需要将富文本中的带html标签内容进行转义后传参给后端，下面说一下怎么通过js实现html标签转义反转义。">
+<meta name="keywords" content="html,js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JS实现HTML标签转义及反转义">
+<meta property="og:url" content="liuzxPower.github.io/2019/01/22/JS实现HTML标签转义及反转义/index.html">
 <meta property="og:site_name" content="WE ARE YOUNG">
-<meta property="og:description" content="山重水复疑无路，柳暗花明又一村">
+<meta property="og:description" content="前言 今天协助后端处理富文本javascript注入xss攻击问题，需要将富文本中的带html标签内容进行转义后传参给后端，下面说一下怎么通过js实现html标签转义反转义。">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-22T07:27:20.939Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="WE ARE YOUNG">
-<meta name="twitter:description" content="山重水复疑无路，柳暗花明又一村">
+<meta name="twitter:title" content="JS实现HTML标签转义及反转义">
+<meta name="twitter:description" content="前言 今天协助后端处理富文本javascript注入xss攻击问题，需要将富文本中的带html标签内容进行转义后传参给后端，下面说一下怎么通过js实现html标签转义反转义。">
 
 
 
@@ -137,7 +138,7 @@
 
 
 
-  <link rel="canonical" href="liuzxPower.github.io/tags/github/">
+  <link rel="canonical" href="liuzxPower.github.io/2019/01/22/JS实现HTML标签转义及反转义/">
 
 
 
@@ -147,7 +148,7 @@
   };
 </script>
 
-  <title>标签: github | WE ARE YOUNG</title>
+  <title>JS实现HTML标签转义及反转义 | WE ARE YOUNG</title>
   
 
 
@@ -195,7 +196,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/liuzxPower" class="github-corner" aria-label="View source on GitHub"><svg width="90" height="90" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -288,7 +289,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -327,28 +328,6 @@
   
     
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
   
 
   
@@ -373,108 +352,276 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>github<small>标签</small>
-        </h1>
-      </div>
-
-      
-        
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="liuzxPower.github.io/2019/01/22/JS实现HTML标签转义及反转义/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zexuanliu">
+      <meta itemprop="description" content="山重水复疑无路，柳暗花明又一村">
+      <meta itemprop="image" content="/images/touxiang.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="WE ARE YOUNG">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/2019/01/03/GitHub+Hexo之本地Blog部署到GitHub/" itemprop="url">
-            
-              <span itemprop="name">GitHub+Hexo之本地Blog部署到GitHub</span>
-            
-          </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">JS实现HTML标签转义及反转义
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-03T15:25:15+08:00" content="2019-01-03">
-          01-03
-        </time>
-      </div>
+              
+            
+          </h1>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-22 14:50:54 / 修改时间：15:27:20" itemprop="dateCreated datePublished" datetime="2019-01-22T14:50:54+08:00">2019-01-22</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">1.6k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">1 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/01/02/GitHub+Hexo之Blog本地环境部署/" itemprop="url">
-            
-              <span itemprop="name">GitHub+Hexo之Blog本地环境部署</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-02T17:40:29+08:00" content="2019-01-02">
-          01-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-          <a class="post-title-link" href="/2019/01/01/GitHub从注册到使用方法/" itemprop="url">
-            
-              <span itemprop="name">GitHub从注册到使用方法</span>
-            
-          </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-01T17:40:29+08:00" content="2019-01-01">
-          01-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><blockquote>
+<p>今天协助后端处理富文本javascript注入xss攻击问题，需要将富文本中的带html标签内容进行转义后传参给后端，下面说一下怎么通过js实现html标签转义反转义。</p>
+</blockquote>
+ <a id="more"></a>
+<h3 id="JS实现HTML标签转义及反转义"><a href="#JS实现HTML标签转义及反转义" class="headerlink" title="JS实现HTML标签转义及反转义"></a>JS实现HTML标签转义及反转义</h3><p>html标签转义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function html2Escape(html) &#123;</span><br><span class="line"> return sHtml.replace(/[&lt;&gt;&amp;&quot;]/g,function(c)&#123;return &#123;&apos;&lt;&apos;:&apos;&amp;lt;&apos;,&apos;&gt;&apos;:&apos;&amp;gt;&apos;,&apos;&amp;&apos;:&apos;&amp;amp;&apos;,&apos;&quot;&apos;:&apos;&amp;quot;&apos;&#125;[c];&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>html标签反转义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function escape2Html(str) &#123;</span><br><span class="line"> var arrEntities=&#123;&apos;lt&apos;:&apos;&lt;&apos;,&apos;gt&apos;:&apos;&gt;&apos;,&apos;nbsp&apos;:&apos; &apos;,&apos;amp&apos;:&apos;&amp;&apos;,&apos;quot&apos;:&apos;&quot;&apos;&#125;;</span><br><span class="line"> return str.replace(/&amp;(lt|gt|nbsp|amp|quot);/ig,function(all,t)&#123;return arrEntities[t];&#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>去掉html标签</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function removeHtmlTab(tab) &#123;</span><br><span class="line"> return tab.replace(/&lt;[^&lt;&gt;]+?&gt;/g,&apos;&apos;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>&nbsp;转成空格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function nbsp2Space(str) &#123;</span><br><span class="line"> var arrEntities = &#123;&apos;nbsp&apos; : &apos; &apos;&#125;;</span><br><span class="line"> return str.replace(/&amp;(nbsp);/ig, function(all, t)&#123;return arrEntities[t]&#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>回车转为br标签</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">function return2Br(str) &#123;</span><br><span class="line"> return str.replace(/\r?\n/g,&quot;&lt;br /&gt;&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>去除开头结尾换行,并将连续3次以上换行转换成2次换行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function trimBr(str) &#123;</span><br><span class="line"> str=str.replace(/((\s|&amp;nbsp;)*\r?\n)&#123;3,&#125;/g,&quot;\r\n\r\n&quot;);//限制最多2次换行</span><br><span class="line"> str=str.replace(/^((\s|&amp;nbsp;)*\r?\n)+/g,&apos;&apos;);//清除开头换行</span><br><span class="line"> str=str.replace(/((\s|&amp;nbsp;)*\r?\n)+$/g,&apos;&apos;);//清除结尾换行</span><br><span class="line"> return str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>将多个连续空格合并成一个空格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">function mergeSpace(str) &#123;</span><br><span class="line"> str=str.replace(/(\s|&amp;nbsp;)+/g,&apos; &apos;);</span><br><span class="line"> return str;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
 
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    <div>
+    
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+      
+    </div>
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>喜欢我的文章就请我吃根辣条吧😊</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.png" alt="zexuanliu 微信打赏">
+        <p>微信打赏</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.png" alt="zexuanliu 支付宝打赏">
+        <p>支付宝打赏</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html/" rel="tag"># html</a>
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/12/使用vue-cli脚手架创建vue-webpack项目/" rel="next" title="使用vue-cli脚手架创建vue+webpack项目">
+                <i class="fa fa-chevron-left"></i> 使用vue-cli脚手架创建vue+webpack项目
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+  </div>
 
 
           </div>
           
+
+  
+
+
 
         </div>
         
@@ -495,8 +642,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -661,6 +817,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JS实现HTML标签转义及反转义"><span class="nav-number">2.</span> <span class="nav-text">JS实现HTML标签转义及反转义</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -794,6 +967,10 @@
   
 
   
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
 
   
 
